@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>ChatGo</title>
+    <link rel="icon" href="../archivos/imagenes/iconos/ico_logo.png" type="image/png">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+<div class="chat-header">
+    <img src="../archivos/imagenes/iconos/ico_logo.png" alt="Perfil">
+    <span id="nombreUsuario"></span>
+    <button id="btnCerrarSesion" title="Cerrar sesión" aria-label="Cerrar sesión">
+        <img src="../archivos/imagenes/iconos/ico_close.png" alt="Cerrar sesión">
+    </button>
+</div>
+
+<div class="chat-body" id="log"></div>
+
+<div class="chat-footer">
+    <input type="text" id="mensaje" placeholder="Escribe tu mensaje aquí...">
+    <button id="btnEnviar"><img src="../archivos/imagenes/iconos/ico_send.png" alt="Enviar"></button>
+</div>
+
+
+<div id="modalVinculacion" class="modal">
+    <div class="modal-content">
+        <h2>Ingresa tu código de vinculación</h2>
+        <input type="number" id="codigoVinculacion" maxlength="6" placeholder="000000">
+        <button class="btn-vincular" onclick="onVincular()">Vincular</button>
+        <button class="btn-cerrar" onclick="cerrarSesion()">Cerrar Sesión</button>
+    </div>
+</div>
+
+
+
+  <script src="../archivos/librerias/aarondeveloper/aarondeveloper.js"></script>
+  <script src="../archivos/librerias/toastr/toastr.min.js"></script>
+  <script src="../archivos/config/config.js"></script>
+  <script src="../archivos/servicios/UsuarioServices.js"></script>
+  <script src="./script.js"></script>
+</body>
+</html>
